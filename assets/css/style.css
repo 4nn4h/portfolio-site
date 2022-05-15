@@ -1,0 +1,21 @@
+:root {
+    --primary: #1c1247;
+    --secondary: greenyellow;
+    --other: ghostwhite;
+}
+
+@font-face {
+    src: url(../fonts/GAU_pop_magic.TTF);
+    font-family: pop; 
+}
+
+body {
+    font-family: helvetica;
+    background-color: var(--primary);
+    color: var(--other);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--secondary);
+}
