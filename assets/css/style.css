@@ -9,6 +9,12 @@
     font-family: pop; 
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: helvetica;
     background-color: var(--primary);
@@ -17,10 +23,9 @@ body {
 
 header {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     position: sticky;
     z-index: 9999;
+    justify-content: space-between;
 }
 
 header h1 {
@@ -33,25 +38,56 @@ header a {
     color: var(--secondary);
 }
 
-header nav {
-    display: flex;
-    justify-content: space-between;
-}
 
 header nav ul {
     display: flex;
     justify-content: space-between;
-    list-style: none;
     align-items: center;
-
-}
-
-header nav ul li {
-    display: flex;
-    justify-content: space-between;
+    list-style: none;
 }
 
 header nav ul li a {
+    padding: 25px;
     font-weight: bold;
-    font-size: 2.0vw;
+    font-size: 25px;
+}
+
+footer {
+    padding: 15px;
+    font-family: pop;
+    color: var(--primary);
+    background-color: var(--secondary);
+}
+
+.combo {
+    display: flex;
+}
+
+.about {
+
+}
+
+.about h2 {
+
+}
+
+.about p {
+    line-height: 1.75;
+}
+
+.contact {
+    flex: 1;
+}
+
+.works {
+
+}
+
+.blocks {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#latest {
+ 
 }
