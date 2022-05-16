@@ -3,91 +3,55 @@
     --secondary: greenyellow;
     --other: ghostwhite;
 }
-
-@font-face {
-    src: url(../fonts/GAU_pop_magic.TTF);
-    font-family: pop; 
-}
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+@font-face {
+    src: url(../fonts/GAU_pop_magic.TTF);
+    font-family: pop; 
+}
+
 body {
+    text-align: center;
     font-family: helvetica;
     background-color: var(--primary);
     color: var(--other);
 }
 
-header {
-    display: flex;
-    position: sticky;
-    z-index: 9999;
-    justify-content: space-between;
-}
-
-header h1 {
-    font-family: pop;
-    font-size: 50px;
-}
-
-header a {
+a {
     text-decoration: none;
-    color: var(--secondary);
 }
 
-
-header nav ul {
+ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
     list-style: none;
 }
 
-header nav ul li a {
-    padding: 25px;
-    font-weight: bold;
-    font-size: 25px;
-}
-
-footer {
-    padding: 15px;
-    font-family: pop;
-    color: var(--primary);
-    background-color: var(--secondary);
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .combo {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .about {
-
-}
-
-.about h2 {
-
-}
-
-.about p {
-    line-height: 1.75;
+    display: flex;
+    text-align: left;
 }
 
 .contact {
-    flex: 1;
-}
-
-.works {
-
-}
-
-.blocks {
     display: flex;
-    flex-wrap: wrap;
-}
-
-#latest {
- 
+    flex: 1;
+    width: auto;
+    text-align: left;
 }
