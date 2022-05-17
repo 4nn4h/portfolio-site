@@ -2,6 +2,9 @@
     --primary: #1c1247;
     --secondary: greenyellow;
     --other: ghostwhite;
+    --click: palegreen;
+    --shadow1:darkslateblue;
+    --shadow2: indigo;
 }
 * {
     box-sizing: border-box;
@@ -26,6 +29,15 @@ h1, h2, h3 {
     font-family: pop;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:visited { 
+    text-decoration: none;
+    color: var(--secondary);
+}
+
 header {
     display: flex;
     flex-wrap: wrap;
@@ -42,19 +54,17 @@ header h1 a {
 
 header a {
     padding: 20px;
-    text-decoration: none;
     color: var(--secondary);
-    border: none;
 }
 
 header a:hover {
     color: var(--other);
-    text-shadow: 3px 4px darkslateblue;
+    text-shadow: 3px 4px var(--shadow1);
 }
 
 header a:active {
-    color: forestgreen;
-    text-shadow: 4px 4px indigo;
+    color: var(--click);
+    text-shadow: 4px 4px var(--shadow2);
 }
 
 ul {
@@ -66,25 +76,82 @@ ul {
     font-weight: bolder;
 }
 
+footer {
+    padding: 20px;
+    color: var(--shadow2);
+    background-color: var(--secondary);
+    text-align: left;
+}
+
 .combo {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    padding: 20px;
+}
+
+.combo h2 {
+    padding: 10px;
 }
 
 address {
     font-style: normal;
+    line-height: 1.5;
+}
+
+address a {
+    color: var(--secondary);
+}
+
+address a:hover {
+    color: var(--other);
+    text-shadow: 3px 4px var(--shadow1);
+}
+
+address a:active {
+    color: var(--click);
+    text-shadow: 4px 4px var(--shadow2);
+}
+
+.works {
+    padding: 20px;
 }
 
 .boxes {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    justify-content:space-around;
+}
+
+h3 {
+    padding: 10px;
+    font-size: 20px;
+    color: var(--secondary);
+}
+
+h3 a:hover {
+    color: var(--other);
+    text-shadow: 3px 4px var(--shadow1);
+}
+
+h3 a:active {
+    color: var(--click);
+    text-shadow: 4px 4px var(--shadow2);
+}
+
+h4 {
+    padding: 10px;
+    text-align: left;
+}
+
+#latest h4 {
+    text-align: center;
 }
 
 #latest {
     width: 100%;
+    align-items: center;
+    padding: 10px;
 }
